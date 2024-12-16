@@ -2,6 +2,7 @@
 import Options from './components/Options/Options'
 import Feedback from './components/Feedback/Feedback'
 import Notification from './components/Notification/Notification'
+import Description from './components/Description/Description.jsx';
 import { useEffect, useState } from "react";
 import css from './App.module.css'
 
@@ -31,8 +32,7 @@ function App() {
 
   return (
     <div className={css.App}>
-      <h1>Sip Happens Café</h1>
-      <p>Please leave your feedback about our service by selecting one of the options below.</p>
+       <Description />
       <Options
         updateFeedback={updateFeedback}
         resetFeedback={resetFeedback}
